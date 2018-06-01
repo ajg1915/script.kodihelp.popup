@@ -1,34 +1,4 @@
-import xbmcaddon
-import xbmcgui
-import xbmc
- 
-addon       = xbmcaddon.Addon()
-addonname   = addon.getAddonInfo('name')
 
-
-line1 = "Welcome to WorldTV User"
-line2 = "Please Wait For Screen to Fully Load"
-line3 = "Once Loaded your Into The WorldTV World"
-
-
-
-
-choice = xbmcgui.Dialog().yesno(addonname, line1, line2, line3, yeslabel='WorldTV News',nolabel='Close')
-if choice == 1:
-	xbmc.executebuiltin("ActivateWindow(10001,") ##<--change to your plugin|
-elif choice == 0:
-	xbmcgui.Dialog().ok('[COLORlblue] You want to Ingore The Message[/COLOR]','[COLOR limegreen]Ok No Problem,[/COLOR]','[COLORlimegreen]Remeber to Check it Out Daily Updates.[/COLOR]','')
-
-elif choice == 3:
-	xbmcgui.Dialog().ok('[COLORlblue] Welcome to Our Build[/COLOR]','[COLOR limegreen]Ok No Problem,[/COLOR]','[COLORlimegreen]Remeber to Check it Out Daily Updates.[/COLOR]','')	
-	
-	
-# For color chart go here http://forum.kodi.tv/showthread.php?tid=210837
-# To use color---- [COLOR colorname]blah blah blah [/COLOR]
-# Colors for text can be used anywhere where text is inbetween--- '' and ""
-# For easy copy and paste [COLOR ] [/COLOR]  <---dont forget to put the color name :)
-
-###########thanks to W Hoffman for helping me when i hit a wall###################
 
 
 
